@@ -34,21 +34,22 @@
 
         .mensagem {
             background: rgba(255, 255, 255, 0.1);
-            padding: 30px 20px;
+            padding: 20px 15px;
             border-radius: 15px;
-            max-width: 600px;
+            max-width: 90%;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
         }
 
         .mensagem h1 {
             font-family: 'Dancing Script', cursive;
-            font-size: 2.5em;
+            font-size: 2.2em;
             margin-bottom: 15px;
         }
 
         .foto {
             margin: 20px;
-            max-width: 350px;
+            max-width: 90%;
+            height: auto;
             border-radius: 15px;
             box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
             transition: transform 0.3s;
@@ -61,7 +62,7 @@
         .acoes {
             margin-top: 40px;
             display: flex;
-            gap: 25px;
+            gap: 15px;
             justify-content: center;
             flex-wrap: wrap;
         }
@@ -70,9 +71,9 @@
             background: #ff5080;
             color: white;
             border: none;
-            padding: 15px 30px;
+            padding: 15px 25px;
             border-radius: 30px;
-            font-size: 1.3em;
+            font-size: 1.1em;
             cursor: pointer;
             transition: all 0.3s;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -166,6 +167,51 @@
             background: #ff5080;
             box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
         }
+
+        /* Media Queries para telas menores */
+        @media (max-width: 768px) {
+            .coracao {
+                font-size: 6em;
+            }
+
+            .mensagem h1 {
+                font-size: 2em;
+            }
+
+            .foto {
+                max-width: 80%;
+            }
+
+            .botao-amor {
+                font-size: 1em;
+                padding: 12px 25px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .coracao {
+                font-size: 5em;
+            }
+
+            .mensagem h1 {
+                font-size: 1.8em;
+            }
+
+            .foto {
+                max-width: 100%;
+                margin: 10px;
+            }
+
+            .botao-amor {
+                font-size: 0.9em;
+                padding: 10px 20px;
+            }
+
+            .acoes {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -175,7 +221,6 @@
         <h1>Para o Meu Amor</h1>
         <p>Você é a pessoa mais especial da minha vida. Cada momento ao seu lado é como um sonho, e hoje quero celebrar nosso amor com todo o carinho que você merece!</p>
         <img src="casal.jpg" class="foto" alt="Nossa Foto">
-
     </div>
 
     <div class="acoes">
