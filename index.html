@@ -174,14 +174,14 @@
     <div class="mensagem">
         <h1>Para o Meu Amor</h1>
         <p>Você é a pessoa mais especial da minha vida. Cada momento ao seu lado é como um sonho, e hoje quero celebrar nosso amor com todo o carinho que você merece!</p>
-        <img src="imagem/casal.jpg" class="foto" alt="Nossa Foto">
+        <img src="casal.jpg" class="foto" alt="Nossa Foto">
 
     </div>
 
     <div class="acoes">
         <button class="botao-amor" onclick="mostrarSurpresa()">Clique aqui</button>
         <button class="botao-amor" onclick="tocarMusica()">🎵 Tocar Música</button>
-        <button class="botao-amor" onclick="baixarCarta('imagem/carta.jpg')">💌 Ver Carta</button>
+        <button class="botao-amor" onclick="baixarCarta('carta.jpg')">💌 Ver Carta</button>
     </div>
 
     <!-- Modal da Carta -->
@@ -190,7 +190,7 @@
         <span class="fechar-carta" onclick="fecharCarta()">×</span>
     </div>
 
-    <script>
+    <script> 
         // Função para mostrar a surpresa
         function mostrarSurpresa() {
             // Cria um div com a mensagem de surpresa e botão para fechar
@@ -214,7 +214,7 @@
 
         // Função para tocar a música
         function tocarMusica() {
-            const audio = new Audio('imagem/musica.mp3');
+            const audio = new Audio('musica.mp3');
             audio.play();
         }
 
